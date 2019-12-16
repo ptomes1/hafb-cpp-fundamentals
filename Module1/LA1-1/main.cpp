@@ -12,6 +12,10 @@ int main()
     // cin: for system/user input
     cin >> age;
     cout << "I see you are : "<<age << endl;
+    // sizeof(): get the size of the variable
+    cout << "Intergers are: " << sizeof(int)<< " bytes."<< endl;
+     cout << "Min Integer value: "<< INT32_MIN <<
+         " Max Integers value: "<<INT32_MAX <<" bytes"<< endl;
 
     return 0;
 }

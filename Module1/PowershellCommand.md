@@ -1,3 +1,10 @@
+## C== Environments in Windows
+- git           //for source control
+- cmake         //To work with project
+- g++(mingw)    //compiler for windows. You need to update binary path to system env. variables
+-github.com // for cloud service
+
+
 ## Terminal Commands 
 Note: ($ means terminal prompt):
 ```bash
@@ -35,3 +42,10 @@ int main()
     return 0;
 }
 ```
+
+## Doxygen documentation
+```cpp
+// Add C/C++ Intellisence
+// Add code Spell Extension
+// Add the plug in to VSCode: Doxygen Documentation Generator
+// Run /** and <Enter>

@@ -23,3 +23,15 @@ $ g++ main.cpp -o main
 # To run
 $ ./main.exe
 ```
+
+### C++ File Template
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    return 0;
+}
+```

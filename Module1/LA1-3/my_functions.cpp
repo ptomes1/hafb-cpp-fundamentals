@@ -1,5 +1,6 @@
 #include <iostream>
 #include "my_functions.h"
+#include <array>
 using namespace std;
 
 

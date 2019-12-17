@@ -1,4 +1,4 @@
-## C== Environments in Windows
+## C++ Environments in Windows
 - git           //for source control
 - cmake         //To work with project
 - g++(mingw)    //compiler for windows. You need to update binary path to system env. variables
@@ -21,6 +21,9 @@ $ rm <name>     # remove/delete file/directory
 ```
 ## C++ Basics
 - File extension: `.cpp`
+
+
+
 
 ## g++ Compiler
 ```bash
@@ -49,3 +52,11 @@ int main()
 // Add code Spell Extension
 // Add the plug in to VSCode: Doxygen Documentation Generator
 // Run /** and <Enter>
+
+### Cmake
+To build a project we need all of the rules to be set under 'CmakeList.txt' file.
+-Create a folder '$ mkdri build'
+- Go to the build dir : '$ cd build'
+'..' is for a build that is folder above.
+-Run cmake: '$ cmake .. -G "MinGW Makefiles"'
+-Build or compile you code: '$ cmake --build .'

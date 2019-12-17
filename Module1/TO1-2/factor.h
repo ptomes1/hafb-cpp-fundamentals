@@ -4,5 +4,6 @@
 void FactorMod3();
 void FactorModx(int mod_number);
 void FactorModxRange(int mod_number, int max_range);
+unsigned int GetFactorModxRange(int mod_number, int max_range);
 
 #endif /* !FACTOR_H_ */

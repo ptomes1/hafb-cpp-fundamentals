@@ -49,3 +49,16 @@ void FactorModxRange(int mod_number, int max_range)
     }
     cout<< "Result is now "<< count << endl;
 }
+
+unsigned int GetFactorModxRange(int mod_number, int max_range)
+{
+    unsigned int count=0;
+    for(int ix=1;ix<=max_range;++ix)
+    {
+        if(ix % mod_number == 0)
+        {
+            count++;
+        }
+    }
+    return count;
+}

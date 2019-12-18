@@ -11,6 +11,8 @@ int main() {
   Box.set_width(5);
   Box.set_length(20);
   Box.ShowInfo();
+  Carton Box1(1,2,3);
+  Box1.ShowInfo();
     // create a Carton object using the other constructor
 
   // create an array of Cartons

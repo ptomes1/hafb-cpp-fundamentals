@@ -1,10 +1,14 @@
 #include <iostream>
+#include "carton.h"
 
 using namespace std;
 
 int main() {
   // create a Carton object using the default constructor
-
+  Carton Box;
+  std::cout <<"Box Height: "<< Box.height()<< std::endl;
+  std::cout <<"Box Width: "<< Box.width()<< std::endl;
+  std::cout <<"Box Lenth: "<< Box.length()<< std::endl;
   // create a Carton object using the other constructor
 
   // create an array of Cartons

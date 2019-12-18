@@ -74,7 +74,25 @@ int main()
 
   PeopleToTown.close();
   // write the towns to the file town.txt
+  std :: ofstream mmnt_file;
+  mmnt_file.open("../minmilesnametown.csv");
+  if(mmnt_file.fail())
+  {
+    std:: cout <<" Could open file"<<std:: endl;
+    return 1;
+  }
+  // write commute_minutes and commute_miles to the file commute.txt
+  mmnt_file<<"minutes, miles, min/miles, name, town"<<std:: endl;
+  float minmiles=0;
+  for(int ix=0; ix<kMaxSize;++ix)
+  {
+    minmiles=(float)commute_minutes[ix]/(float)commute_miles[ix];
+    mmnt_file<<commute_minutes[ix]<< ","<< commute_miles[ix] <<
+    ","<<minmiles<< ","<<names[ix]<< ","<< towns[ix] << std:: endl;
+    
+  }
 
+  PeopleToTown.close();
   // create a variable of type ofstream and open the file commute_data.txt
 
   // write commute_minutes, commute_miles, and towns to the file commute.txt

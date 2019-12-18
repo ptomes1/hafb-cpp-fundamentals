@@ -1,15 +1,17 @@
-# set minimum cmake version
-cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
+set(CMAKE_INCLUDE_CURRENT_DIR_IN_INTERFACE ON)
 
-# project name and language
-project(CA0.1 LANGUAGES CXX)
+set(TARGET_NAME ca)      # program name
+set(LIB_NAME mylib)      # lib name
 
-# require C++11
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_EXTENSIONS OFF)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
-
-# main code with ouput name: ca1
-# Note: In windows, the executable name will be: ca1.exe
-add_executable(pa1 main.cpp)
+# Create a Shared Library
+add_library(${LIB_NAME}
+  SHARED
+    counter.h
+    counter.cpp
+    height.cpp
+    height.h
+  )
+# 
+# Note: In windows, the executable name will be: ca.exe
+add_executable(${TARGET_NAME} main.cpp)
+target_link_libraries(${TARGET_NAME} ${LIB_NAME}) # Link Library

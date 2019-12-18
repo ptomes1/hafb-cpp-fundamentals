@@ -14,4 +14,11 @@ class Carton
         double length();
         double width();
         double height();
+        //Setters
+        void set_length(double length);
+        void set_width(double width);
+        void set_height(double height);
+        //Other Methods
+        void ShowInfo();
+
 };  //Must have a ";"

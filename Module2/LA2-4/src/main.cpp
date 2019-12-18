@@ -6,10 +6,12 @@ using namespace std;
 int main() {
   // create a Carton object using the default constructor
   Carton Box;
-  std::cout <<"Box Height: "<< Box.height()<< std::endl;
-  std::cout <<"Box Width: "<< Box.width()<< std::endl;
-  std::cout <<"Box Lenth: "<< Box.length()<< std::endl;
-  // create a Carton object using the other constructor
+  Box.ShowInfo();
+  Box.set_height(10);
+  Box.set_width(5);
+  Box.set_length(20);
+  Box.ShowInfo();
+    // create a Carton object using the other constructor
 
   // create an array of Cartons
 

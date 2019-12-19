@@ -1,4 +1,5 @@
 
+
 #pragma
 
 class Distance
@@ -10,8 +11,8 @@ class Distance
 
 
         //Constructor
-        Distance():feet_(0),inches_(0){};
-        Distance(int feet,float inches):feet_(feet),inches_(inches){};
+        Distance():feet_(0),inches_(0){}
+        Distance(int feet,float inches):feet_(feet),inches_(inches){}
         ~Distance(){}
         //Gets&Setters
         int feet() const{return feet_;}
@@ -21,6 +22,9 @@ class Distance
         void set_inches(int inches) {inches_=inches;}
         // Other Methods
         void ShowDist() const;
+
+        Distance operator +(Distance d2) const;
+        friend std:: ostream &operator <<(std::ostream &os, const Distance &distance);
 };
 
 // distance::distance()
